@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Carmelo's Pizzeria</title>
+  <link href="main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <div id="logo">
+        <img class="logo" src="img/logo.jpg" alt="Carmelo's Logo">
+      </div>
+      <div id="name">
+        <h1>Carmelo's Pizzeria</h1>
+      </div>
+    </header>
+
+    <main>
+      <div id="carousel">
+        <div class="owl-carousel owl-theme">
+          <div><img src="img/bridge.jpg" alt="Brooklyn Bridge Pizza"></div>
+          <div><img src="img/peppizza.jpg" alt="Pepperoni Pizza"></div>
+          <div><img src="img/cannoli.jpg" alt="Cannoli"></div>
+          <div><img src="img/oreocheese.jpg" alt="The Don Pizza"></div>
+          <div><img src="img/thedon.jpg" alt="Oreo Cheesecake"></div>
+        </div>
+      </div>
+      <div id="menu">
+        <a href="#">Menu</a>
+      </div>
+      <div id="hours">
+        <h2>Hours</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Days</th>
+              <th>Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>Closed</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>12:00-10:30</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>12:00-10:30</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>12:00-10:30</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>12:00-11:30</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>12:00-11:30</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>2:00-10:30</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.148473289907!2d-82.40082588476368!3d34.85249648039577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885831d1c39e6505%3A0x95a0d899627ca5d5!2s131+N+Main+St%2C+Greenville%2C+SC+29601!5e0!3m2!1sen!2sus!4v1518450246040" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div id="form">
+        <h2>Sign Up for a Free Monthly Reward</h2>
+        <form action="thanks.html" method="post">
+    <fieldset>
+      <legend>Information</legend>
+        <label for="name">Name:</label>
+          <input id="name" type="text" name="name">
+            <br>
+        <label for="address">E-mail Address:</label>
+          <input id="email" type="text" name="email">
+            <br>
+    </fieldset>
+    <fieldset>
+      <legend>Credit Card Information</legend>
+        Card Type:
+          <input id="visa" type="radio" name="card" value="Visa">
+            <label for="visa">Visa</label>
+          <input id="mastercard" type="radio" name="card" value="Master Card">
+            <label for="mastercard">Master Card</label>
+          <input id="discover" type="radio" name="card" value="Discover">
+            <label for="discover">Discover</label>
+              <br>
+        <label for="cardnumber">Card Number:</label>
+          <input id="cardnumber" type="text" name="cardnumber">
+            <br><br>
+    </fieldset>
+
+          <input type="submit" value="Sign Up!">
+
+  </form>
+      </div>
+    </main>
+
+    <footer>
+      <div id="social"><a href="http://www.instagram.com">Instagram</a></div>
+      <div id="contact"><p>Phone:(864) 121-2323</p> E-mail:JohnAppleseed123@apple.com</div>
+      <div id="credits">By: Kevin B</div>
+    </footer>
+
+  </div>
+
+  <!-- first load jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <!-- owl carousel stuff -->
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          autoplay: true,
+          autoplayHoverPause: true,
+          autoplayTimeout: 2500,
+          dots: true,
+          items: 2,
+          loop: true,
+          margin: 10,
+          nav: false
+      })
+    });
+  </script>
+
+
+
+</body>
+</html>
