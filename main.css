@@ -9,11 +9,12 @@
 
 /*********** Begin Layout Styles ***********/
 body {
-  background-color: #99ffff;
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 div.container {
-  background-color: #ffffff;
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px; /* disable this line if you want full-width layouts */
@@ -28,6 +29,7 @@ header, main, footer {
 header {
   /*border: 3px solid #990000; /* disable this line once layout works */
   display: grid;
+  background-color: #ffffff;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
   grid-template-columns: 1fr;
@@ -150,6 +152,9 @@ div#map {
 
 div#form {
   grid-area: form;
+  background-image: url("img/form.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 div#social {
@@ -163,6 +168,7 @@ div#contact {
 div#credits {
   grid-area: credits;
 }
+
 
 /*********** End Layout Styles ***********/
 
