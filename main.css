@@ -10,8 +10,9 @@
 /*********** Begin Layout Styles ***********/
 body {
   background-image: url("img/background.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center center;
+
 }
 
 div.container {
